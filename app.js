@@ -195,11 +195,11 @@ let UIController = (function() {
             if(type === 'inc') {
                 element = DOMStrings.incomeContainer;
 
-                html = '<div class="item clearfix" id="inc-%id%"><p class="item__description">%description%</p><div class="right clearfix"><p class="item__value">%value%</p><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+                html = '<div class="item clearfix" id="inc-%id%"><p class="item__description">%description%</p><div class="right clearfix"><p class="item__value">%value%</p><div class="item__delete"><button class="item__delete--btn"><span class="material-icons cancel">highlight_off</span></button></div></div></div>';
             } else if(type === 'exp') {
                 element = DOMStrings.expenseContainer;
 
-                html = '<div class="item clearfix" id="exp-%id%"><p class="item__description">%description%</p><div class="right clearfix"><p class="item__value">%value%</p><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+                html = '<div class="item clearfix" id="exp-%id%"><p class="item__description">%description%</p><div class="right clearfix"><p class="item__value">%value%</p><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><span class="material-icons cancel">highlight_off</span></button></div></div></div>'
             }
 
             // Replace the placeholder text with some actual data
