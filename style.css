@@ -19,7 +19,7 @@ body {
     font-family: Open Sans;
     font-size: 16px;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     font-weight: 400;
 }
 
@@ -32,7 +32,7 @@ body {
 **********************************************/
 
 .top {
-    height: 40vh;
+    height: 45vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
     background-size: cover;
     background-position: center;
@@ -41,7 +41,7 @@ body {
 
 .budget {
     position: absolute;
-    max-width: 350px;
+    max-width: 500px;
     padding: 0 2rem;
     width: 100%;
     top: 50%;
@@ -51,9 +51,14 @@ body {
 }
 
 .budget__title {
-    font-size: 1.125rem;
     text-align: center;
     margin-bottom: 0.625rem;
+    font-weight: 300;
+}
+
+.budget__title p {
+    font-size: 1.5rem;
+    text-align: center;
     font-weight: 300;
 }
 
@@ -187,22 +192,22 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
-    grid-gap: 2rem;
+    grid-gap: 30px;
 }
 
 .wrapper {
     margin: 0 1.5rem;
 }
 
-h2 {
+h3 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.icome__title { color: #28B9B5; }
-.expenses__title { color: #FF5049; }
+.icome__title { color: #28B9B5; font-size: 32px;}
+.expenses__title { color: #FF5049; font-size: 32px;}
 
 .item {
     padding: 13px;
@@ -214,11 +219,13 @@ h2 {
 
 .item__description {
     float: left;
+    font: 16px;
 }
 
 .item__value {
     float: left;
     transition: transform 0.3s;
+    font-size: 16px;
 }
 
 .item__percentage {
